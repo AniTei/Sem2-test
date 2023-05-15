@@ -1,0 +1,355 @@
+.content-container {
+    display: none;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5%;
+    font-family: 'Cutive Mono', monospace;
+
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Cutive Mono', monospace;
+
+
+}
+
+main {
+    margin: auto;
+    width: 66vw;
+    background-color: #fff;
+
+}
+
+.brand-heart {
+    max-width: 7%;
+    margin: auto;
+}
+
+.button {
+    text-transform: uppercase;
+    color: #716045;
+    border: solid #716045 1px;
+    max-width: fit-content;
+    padding: 1em 2em;
+    box-shadow: 1px 2px 5px #716045;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+/*********** HEADER **************/
+
+header {
+    background-color: #716045;
+    position: sticky;
+    top: 0px;
+    padding-top: 7px;
+    box-shadow: 0px 3px 5px #3d3425;
+    font-family: 'Cutive Mono', monospace;
+    z-index: 5;
+}
+
+
+.header-content {
+    margin: auto;
+    width: 66%;
+    background-color: #716045;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: inline-flex;
+    width: 40%;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+
+/**** make the menu jump at 1000 and below ****/
+.current {
+    text-decoration: underline;
+}
+
+.so-me {
+    max-width: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.so-me-logo {
+    max-width: 80%;
+}
+
+.logo {
+    max-width: 30%;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+
+/***** FOOTER *****/
+
+footer {
+    background-color: #c5d8c8;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*** INDEX ***/
+
+.carusell {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap : 10px;
+    padding: 2em;
+
+}
+.carusell div {
+    background-color: rgb(190, 190, 190);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* header  */
+
+
+.camille {
+    width: 150%;
+    position: relative;
+    left: -25%;
+    margin: 10% 0;
+}
+
+.camille-img {
+    width: 100%;
+
+}
+
+.camille p {
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 900;
+    font-size: 2em;
+    max-width: 67%;
+    margin: auto;
+    position: relative;
+    bottom: 250px;
+    background-color: #ffffff92;
+
+    /**** make the quote jump at 1000 and below ****/
+}
+
+.philosophy {
+    background-color: #c5d8c8;
+    width: 100%;
+    position: relative;
+    left: -25%;
+    padding: 0% 25%;
+    margin: 15% 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.philosophy-img {
+    max-width: 100%;
+    position: relative;
+    top: -100px
+}
+
+.philosophy div {
+    padding: 3em;
+    position: relative;
+    top: -120px;
+    text-align: center;
+}
+
+.philosophy h2 {
+padding-top: 0;}
+
+
+.philosophy p {
+    padding: 3em 0;
+}
+
+
+
+
+/**** ABOUT ****/
+
+.about-creator-img {
+    max-width: 100%;
+}
+
+.about-text {
+    max-width: 100%;
+    padding: 10%;
+    margin: auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20%;
+}
+
+
+/***** BLOG LIST *****/
+
+.list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    grid-template-areas:
+        'list-heading list-heading'
+        'list-img list-date'
+        'list-img list-text'
+        'list-img list-button'
+    ;
+
+}
+
+.list-container h2 {
+    grid-area: list-heading;
+
+
+}
+
+.list-container button {
+    grid-area: list-button;
+}
+
+.list-container img {
+    max-width: 100%;
+    grid-area: list-img;
+    /* OBJECT FIT FOR BLOG LISTED ITEMS*/
+
+}
+
+
+
+.list-container .date {
+    grid-area: list-date;
+}
+
+.list-container .text {
+    grid-area: list-text;
+}
+
+/***** SPECIFIC POST*****/
+
+.spec-back {
+    color: #716045;
+    text-decoration: underline;
+}
+
+.spec-container .spec-img {
+    float: right;
+    max-width: 50%;
+    padding-left: 10px;
+}
+
+.spec-container .date {
+    text-align: end;
+}
+
+.sign-off {
+    max-width: 300px;
+    display: grid;
+    grid-gap: 20px;
+    padding-top: 2em;
+    grid-template-areas:
+        'bye bye'
+        'name heart';
+}
+
+.sign-off .bye {
+    grid-area: bye;
+}
+
+.sign-off .name {
+    grid-area: name;
+}
+
+.sign-off img {
+    grid-area: heart;
+    max-width: 20%;
+    margin: 0;
+}
+
+/*** CONTACT ***/
+
+.contact {
+    margin-bottom: 10vh;
+}
+
+.contact p {
+    float: left;
+}
+
+.contact img {
+    float: left;
+    max-width: 30px;
+}
+
+form {
+    background-color: #716045;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20vh;
+    font-size: 0.9em;
+}
+
+form input {
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+form label {
+    margin-top: 0.9em;
+}
+form button {
+   margin-top: 1em;
+}
+form textarea {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
