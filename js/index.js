@@ -1,6 +1,6 @@
-const contentContainer = document.querySelector (".content-container");
+const listContainer = document.querySelector (".content-container");
 
-contentContainer.innerHTML = `<p> hei </p>`;
+listContainer.innerHTML = `<p> hei </p>`;
 
 console.log ("hei");
 
@@ -39,6 +39,6 @@ showData(); */
 
 
 
-contentContainer.innerHTML = `<div> PÅ DEG </div>`;
+listContainer.innerHTML = `<div> PÅ DEG </div>`;
 
 /* DO I HAVE TO LOOP THROUGH EVERY TIME I WANT TO USE AN ARRAY? */
