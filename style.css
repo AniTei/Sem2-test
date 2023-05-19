@@ -11,8 +11,9 @@ body {
 h1 {
     text-transform: uppercase;
     text-align: center;
-    padding: 5%;
+    padding: 3%;
     font-family: 'Cutive Mono', monospace;
+    font-size: 3em;
 
 }
 
@@ -281,10 +282,6 @@ margin-top: 10vh;
 
 }
 
-
-
-
-
 .list-grid .date {
     grid-area: list-date;
 }
@@ -293,10 +290,22 @@ margin-top: 10vh;
     grid-area: list-text;
 }
 
+
+.list-more-results-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.list-more-posts-container {
+    display: none;
+}
+
 /***** SPECIFIC POST*****/
 
 .spec-back {
-    color: #716045;
+    color: #000000;
     text-decoration: underline;
 }
 
@@ -313,7 +322,7 @@ margin-top: 10vh;
 .sign-off {
     max-width: 300px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 0px;
     padding-top: 2em;
     grid-template-areas:
         'bye bye'

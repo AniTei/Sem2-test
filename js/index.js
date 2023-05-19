@@ -8,7 +8,7 @@ console.log ("hei");
 
 const url = "http://thefoodplace.local/wp-json/wp/v2/posts";
 
-async function getPosts () {
+async function get10Posts () {
     const respond = await fetch(url);
     const data = await respond.json();
 
@@ -20,7 +20,7 @@ async function getPosts () {
 
 }
 
-getPosts();
+get10Posts();
 
 console.log (data);
 
