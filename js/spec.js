@@ -18,7 +18,7 @@ async function findPost() {
         specContainer.innerHTML += `<h1>${data.title.rendered}</h1>
                                         <p class="date">Published: ${data.date}</p>
 
-                                        <div>${data.content.rendered}</div>`;
+                                        <div class="spec-content">${data.content.rendered}</div>`;
 
 
 
