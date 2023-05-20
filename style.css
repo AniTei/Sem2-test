@@ -180,6 +180,17 @@ footer {
     font-size:  1.8em; ;
 }
 
+.arw-nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -220px
+}
+.arw-btn {
+    font-size: 3em;
+    color: #716045;
+}
+
 
 
 
