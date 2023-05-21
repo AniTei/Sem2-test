@@ -33,10 +33,9 @@ get10Posts();
 
 
 
-const morePostsContainer = document.querySelector (".list-more-posts-container");
+const morePostsContainer = document.querySelector(".list-more-posts-container");
 
 const urlNext = url + "?page=2";
-
 
 
 async function getNextPosts() {
@@ -44,11 +43,6 @@ async function getNextPosts() {
         const respond = await fetch(urlNext);
         const data = await respond.json();
 
-        console.log(data);
-
-
-/*         onclick show div style display block
- */
         for (let i = 0; i < data.length; i++) {
 
             morePostsContainer.innerHTML +=
@@ -70,3 +64,13 @@ async function getNextPosts() {
 }
 
 getNextPosts();
+
+
+const moreResultsBtn = document.querySelector("#more-results-btn");
+
+moreResultsBtn.addEventListener("click", function showMorePosts(){
+morePostsContainer.style.display = "block";
+})
+
+
+
