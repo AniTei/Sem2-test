@@ -1,4 +1,4 @@
-const specContainer = document.querySelector(".spec-container");
+/* const specContainer = document.querySelector(".spec-container");
 
 specContainer.innerHTML = `<div>test</div>`;
 
@@ -32,6 +32,16 @@ async function findPost() {
     }
 }
 
-findPost();
+findPost(); */
+
+
+
+const modalTrigger = document.querySelector (".wp-block-image");
+
+
+modalTrigger.addEventListener("click", function showMorePosts(){
+    console.log ("fghjkl");
+    })
+
 
 
