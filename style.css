@@ -404,17 +404,18 @@ footer {
 }
 
 .modal {
-/*     display: none; /* Hidden by default */
-   
- position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; 
+    display: none;
+
+    position: fixed;
+    z-index: 4;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    background-color:#00000080 ;
+    width: 100%;
+    height: 100%;
+    background-color: #000000aa;
 }
+
 .modal img {
     /* Modal Content (Image) */
 

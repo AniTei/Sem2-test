@@ -1,6 +1,5 @@
-/* const specContainer = document.querySelector(".spec-container");
-
-specContainer.innerHTML = `<div>test</div>`;
+const specContainer = document.querySelector(".spec-container");
+const specTitle = document.querySelector(".spec-title");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -13,35 +12,35 @@ async function findPost() {
         const respond = await fetch(url)
         const data = await respond.json();
 
-        console.log(data.date);
-
         specContainer.innerHTML += `<h1>${data.title.rendered}</h1>
                                         <p class="date">Published: ${data.date}</p>
 
                                         <div class="spec-content">${data.content.rendered}</div>`;
 
+        specTitle.innerHTML = `${data.title.rendered}`;
 
+        const modalTrigger = document.querySelector(".wp-block-image");
+        const modalDiv = document.querySelector(".modal")
 
+        modalDiv.innerHTML = `<div>${data.content.rendered}</div>`;
 
-        detailsTitle.innerHTML = `${yourDrink.strDrink}`;
+        modalTrigger.addEventListener("click", function showModal() {
+            modalDiv.style.display = "block";
+        }
+
+        )
 
     }
+
     catch (error) {
         console.log("OOOPSIE:/sjekk internettforbindelse!", error);
         detailsContent.innerHTML = `<div class="error">OH NO, something went wrong 😢</div>`;
     }
 }
 
-findPost(); */
+findPost();
 
 
-
-const modalTrigger = document.querySelector (".wp-block-image");
-
-
-modalTrigger.addEventListener("click", function showMorePosts(){
-    console.log ("fghjkl");
-    })
-
+/* NEXT HOW TO ESCAPE THE MODAL */
 
 
