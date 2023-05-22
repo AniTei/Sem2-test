@@ -1,49 +1,49 @@
-const listContainer = document.querySelector (".content-container");
+const carousel = document.querySelector(".carousel");
 
-listContainer.innerHTML = `<p> hei </p>`;
+carousel.innerHTML = `<p> hei </p>`;
 
-console.log ("hei");
+console.log("hei");
 
-/* BOTH OK */
 
-const url = "http://thefoodplace.local/wp-json/wp/v2/posts";
+const url = "http://thefoodplace.local/wp-json/wp/v2/posts/?per_page=12";
 
-async function get10Posts () {
+async function get12Posts() {
     const respond = await fetch(url);
     const data = await respond.json();
 
-    console.log (data);
+    console.log(data);
 
-    return data;
+    for (let i=0; i< data.length; i++) {
+        carousel.innerHTML += `
+        
+            <a href="specific-post.html?id=${data[i].id}">
+                <h3>${data[i].title.rendered}</h3>
+                <div class="carousel-content">${data[i].content.rendered}</div>
 
-/*     for (let i = 0; i < postData.length; i++) */
+            </a>`;
+
+    }
+
+    /*  for (let i = 0; i < data.length; i++) {
+ 
+         carousel.innerHTML += `<a href="specific-post.html?id=${data[i].id}>
+         <div> <h3>${data[i].title.rendered}</h3>
+         
+         
+         </div>
+         </a>`;
+     } */
+
+
 
 }
 
-get10Posts();
-
-console.log (data);
-
-
-/* function showData (data) {
-    console.log (data);
-
-HOW DO I RETURN A VARIABLE FROM A FUNCTION???
-
-}
-
-showData(); */
+get12Posts();
 
 
 
 
 
 
-listContainer.innerHTML = `<div> PÅ DEG </div>`;
-
-/* DO I HAVE TO LOOP THROUGH EVERY TIME I WANT TO USE AN ARRAY? */
 
 
-
-
-http://thefoodplace.local/wp-json/wp/v2/posts/?per_page=12
