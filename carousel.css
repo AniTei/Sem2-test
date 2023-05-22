@@ -1,0 +1,69 @@
+
+.carousel .group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 2em;
+    background-color: beige;
+
+}
+
+.api-example {
+    background-color: bisque;
+    height: 300px;
+}
+
+.two,
+.three {
+    background-color: aquamarine;
+    display: none;
+}
+
+
+
+
+
+.carousel figure {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+}
+.carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(63%);
+    position: relative;
+    top: -300px;
+    z-index: 1;
+}
+
+
+.carousel p {
+    display: none;
+}
+
+.testH3{
+    z-index: 2;
+    text-align: center;
+    color: #d1c1c1;
+    padding: 25px 20px;
+    margin: 0;
+    font-size: 1.8em;
+    position: relative;
+    height: 250px
+   
+}
+
+/* .arw-nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -220px
+}
+
+.arw-btn {
+    font-size: 3em;
+    color: #716045;
+} */
