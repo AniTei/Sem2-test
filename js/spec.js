@@ -26,10 +26,11 @@ async function findPost() {
 
         modalTrigger.addEventListener("click", function showModal() {
             modalDiv.style.display = "block";
-        }
+        })
 
-        )
-
+        modalDiv.addEventListener("click", function hideModal() {
+            modalDiv.style.display = "none";
+        })
     }
 
     catch (error) {
@@ -39,8 +40,5 @@ async function findPost() {
 }
 
 findPost();
-
-
-/* NEXT HOW TO ESCAPE THE MODAL */
 
 
