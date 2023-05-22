@@ -42,3 +42,8 @@ showData(); */
 listContainer.innerHTML = `<div> PÅ DEG </div>`;
 
 /* DO I HAVE TO LOOP THROUGH EVERY TIME I WANT TO USE AN ARRAY? */
+
+
+
+
+http://thefoodplace.local/wp-json/wp/v2/posts/?per_page=12
