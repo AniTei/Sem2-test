@@ -1,6 +1,6 @@
-const carousel = document.querySelector(".carousel");
+const sliderWidth = document.querySelector(".slider-width");
 
-carousel.innerHTML = `<p> hei </p>`;
+/* sliderWidth.innerHTML += `<p> hei </p>`; */
 
 console.log("hei");
 
@@ -14,13 +14,14 @@ async function get12Posts() {
     console.log(data);
 
     for (let i=0; i< data.length; i++) {
-        carousel.innerHTML += `
-        
+        sliderWidth.innerHTML += `
+        <div class="item">
             <a href="specific-post.html?id=${data[i].id}">
                 <h3>${data[i].title.rendered}</h3>
                 <div class="carousel-content">${data[i].content.rendered}</div>
 
-            </a>`;
+            </a>
+        </div>`;
 
     }
 
@@ -42,6 +43,11 @@ get12Posts();
 
 
 
+/* const prevBtn = document.querySelector (".prev");
+const nextBtn = document.querySelector (".next");
+
+prevBtn.innerHTML = "hei";
+nextBtn.innerHTML= "sann"; */
 
 
 

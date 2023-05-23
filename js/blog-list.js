@@ -1,4 +1,4 @@
-const carousel = document.querySelector(".list-container");
+const sliderWidth = document.querySelector(".list-container");
 
 const url = "http://thefoodplace.local/wp-json/wp/v2/posts";
 
@@ -9,7 +9,7 @@ async function get10Posts() {
 
         for (let i = 0; i < data.length; i++) {
 
-            carousel.innerHTML +=
+            sliderWidth.innerHTML +=
                 `<div class="list-grid">
                     <h2>${data[i].title.rendered}</h2>
                     <div class="list-img-container"> ${data[i].content.rendered}</div>
@@ -23,7 +23,7 @@ async function get10Posts() {
     }
     catch (error) {
         console.log("OOOPSIE:/sjekk internettforbindelse!", error);
-        carousel.innerHTML = `<div class="error">OH NO, something went wrong 😢</div>`;
+        sliderWidth.innerHTML = `<div class="error">OH NO, something went wrong 😢</div>`;
     }
 }
 

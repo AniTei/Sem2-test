@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+
+            <a href="index.html" class="logo">
+                <img src="images/the_food_place_print_scree_logo-removebg-preview.png" alt="logo for The Food Place">
+            </a>
+
+            <nav>
+                <a href="blog-list.html">blog</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="so-me">
+                <img src="images/facebook-image.png" alt="facebook logo, link" class="so-me-logo">
+                <img src="images/instagram-image.png" alt="instagram logo, link" class="so-me-logo">
+                <img src="images/pinterest-image.png" alt="pinterest logo, link" class="so-me-logo">
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <h2>Latest posts</h2>
+
+
+        <div class="slider-container">
+            <div class="slider-width">
+<!--                 <div class="item">Placeholder div, to illustarte item from API</div>
+ -->            </div>
+        </div>
+        <button type="button" class="button btn prev" oncanplay="prev()" >prev</button>
+        <button type="button" class="button btn next" oncanplay="next()" >next</button>
+
+
+
+
+
+
+
+        <div class="arw-nav">
+            <div class="prev-btn arw-btn">&#10092;</div>
+            <div class="nxt-btn arw-btn"> &#10093;</div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>
+            &copy; Copyright 2023 🍊
+        </p>
+    </footer>
+    <script src="js/index.js"></script>
+
+    <script>
+
+const prevBtn = document.querySelector (".prev");
+const nextBtn = document.querySelector (".next");
+
+const sliderContainer = document.querySelector (".slider-container");
+const slider = document.querySelector (".slider-width");
+
+
+let count = 0;
+
+nextBtn.addEventListener("click", function moveSlider(){
+count = count - slider.offsetWidth / 3;
+slider.style.left = count + "px";
+})
+
+
+
+/* function disableNext () {
+    if (count - slider.offsetWidth / 3 < count - sliderContainer.offsetWidth * 2 ) {
+        nextBtn.disabled = true;
+    }
+    else {
+        nextBtn.disabled = false;
+    }
+}
+disableNext(); */
+
+
+prevBtn.addEventListener("click", function moveSlider(){
+count = count + slider.offsetWidth / 3;
+slider.style.left = count + "px";
+})
+
+
+
+/* console.log (sliderLeft);
+ */
+
+/* const sliderLeft = document.getElementBy(".slider-");
+ */
+/* console.log ("left:", slider.left ); */
+
+
+
+/* nextBtn.disabled = true;
+ */
+
+
+/* add btn disable
+ */
+/* prevBtn.addEventListener("click", function moveSlider(){
+slider.style.left = slider.offsetWidth / 3 + "px";
+}) */
+
+
+/* if left = container *2 next btn sleep
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log ("container", sliderContainer.offsetWidth); /* this one i nthink */
+
+/* console.log ("slider" ,slider.offsetWidth / 3);
+
+console.log (screen.width); */
+
+/* make left jump the slider width devided by 3,
+
+or width of slider container? */
+
+
+/* slider.style.background = "blue";
+ */
+
+    </script>
+</body>
+
+</html>
