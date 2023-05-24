@@ -46,10 +46,12 @@
 
 
 /* piler */
+
 .btn {
     cursor: pointer;
     font-size: 3em;
     padding: 0 1em;
+    color: #716045;
 }
 .arw-nav {
     display: flex;
