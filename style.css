@@ -319,8 +319,10 @@ footer {
 /***** SPECIFIC POST*****/
 
 .spec-back {
-    color: #000000;
-    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
 }
 
 .spec-content figure {
