@@ -14,9 +14,6 @@
 
 }
 
-/* .carousel {
-    display: flex;
-} */
 
 
 /* from video */
@@ -24,7 +21,7 @@
 .slider-container {
     position: relative;
     overflow-x: hidden;
-    height: 500px;
+    height: 420px;
 }
 
 .slider-width {
@@ -46,11 +43,17 @@
     margin: 0 0.4%;
 }
 
+
+
+/* piler */
 .btn {
     cursor: pointer;
+    font-size: 3em;
+    padding: 0 1em;
+}
+.arw-nav {
+    display: flex;
+    justify-content: center;
 }
 
-/* 
-.slider-width {
-    display: block;
-} */
+
