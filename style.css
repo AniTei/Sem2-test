@@ -346,6 +346,7 @@ footer {
 
 .modal {
     display: none;
+    cursor: pointer;
 
     position: fixed;
     z-index: 4;

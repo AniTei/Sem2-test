@@ -50,11 +50,11 @@
 
         <div class="slider-container">
             <div class="slider-width">
-<!--                 <div class="item">Placeholder div, to illustarte item from API</div>
- -->            </div>
+                <!-- <div class="item">Placeholder div, to illustarte item from API</div>-->
+            </div>
         </div>
-        <button type="button" class="button btn prev" oncanplay="prev()" >prev</button>
-        <button type="button" class="button btn next" oncanplay="next()" >next</button>
+        <button type="button" class="button btn prev" oncanplay="prev()">prev</button>
+        <button type="button" class="button btn next" oncanplay="next()">next</button>
 
 
 
@@ -88,92 +88,6 @@
     </footer>
     <script src="js/index.js"></script>
 
-    <script>
-
-const prevBtn = document.querySelector (".prev");
-const nextBtn = document.querySelector (".next");
-
-const sliderContainer = document.querySelector (".slider-container");
-const slider = document.querySelector (".slider-width");
-
-
-let count = 0;
-
-nextBtn.addEventListener("click", function moveSlider(){
-count = count - slider.offsetWidth / 3;
-slider.style.left = count + "px";
-})
-
-
-
-/* function disableNext () {
-    if (count - slider.offsetWidth / 3 < count - sliderContainer.offsetWidth * 2 ) {
-        nextBtn.disabled = true;
-    }
-    else {
-        nextBtn.disabled = false;
-    }
-}
-disableNext(); */
-
-
-prevBtn.addEventListener("click", function moveSlider(){
-count = count + slider.offsetWidth / 3;
-slider.style.left = count + "px";
-})
-
-
-
-/* console.log (sliderLeft);
- */
-
-/* const sliderLeft = document.getElementBy(".slider-");
- */
-/* console.log ("left:", slider.left ); */
-
-
-
-/* nextBtn.disabled = true;
- */
-
-
-/* add btn disable
- */
-/* prevBtn.addEventListener("click", function moveSlider(){
-slider.style.left = slider.offsetWidth / 3 + "px";
-}) */
-
-
-/* if left = container *2 next btn sleep
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log ("container", sliderContainer.offsetWidth); /* this one i nthink */
-
-/* console.log ("slider" ,slider.offsetWidth / 3);
-
-console.log (screen.width); */
-
-/* make left jump the slider width devided by 3,
-
-or width of slider container? */
-
-
-/* slider.style.background = "blue";
- */
-
-    </script>
 </body>
 
 </html>
