@@ -20,6 +20,7 @@ h1 {
 h2 {
     text-transform: uppercase;
     font-family: 'Cutive Mono', monospace;
+    margin-top: 2em;
 }
 
 h3 {
@@ -139,6 +140,29 @@ footer {
 
 /* header  img */
 
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cutive Mono', monospace;
+}
+
+.welcome .foodie {
+    display: flex;
+/*     justify-content: center;
+ */    position: relative;
+    top: 50px;
+    left: -85px;
+    max-width: 200px;
+}
+.welcome p {
+    font-size: 2em;
+}
+.welcome img {
+    max-width: 15%;
+   
+}
 
 .camille {
     width: 150%;

@@ -11,6 +11,25 @@
     max-width: 100%;
     height: 300px;
     object-fit: cover;
+    filter: brightness(50%);
+
+}
+
+.item h3 {
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    max-width: 148px;
+    margin-top: 70px;
+
+}
+
+.item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -53,9 +72,10 @@
     padding: 0 1em;
     color: #716045;
 }
+
 .arw-nav {
     display: flex;
     justify-content: center;
+    position: relative;
+    top: -70px;
 }
-
-
