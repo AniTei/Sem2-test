@@ -17,6 +17,31 @@
 
 
    /* about */
-    
+
+   .about-grid {
+      grid-gap: 0;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+         'img heart'
+         'text text'
+   }
+
+   .about-creator-img {
+      max-width: 100%;
+      grid-area: img;
+   }
+
+   .about-heart {
+      grid-area: heart;
+      width: 30px;
+      max-width: none;
+   }
+
+   .about-text {
+      grid-area: text;
+   }
+
+
+
 
 }
