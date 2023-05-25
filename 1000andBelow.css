@@ -111,13 +111,49 @@
 
 
 
+   /* spec-post */
+
+   .spec-content p {
+      margin: 2em;
+   }
+   .sign-off {
+      margin: 2em;
+   }
+
+   .spec-content figure {
+/* 
+
+      margin: 0;
+      position: relative;
+      left: -5%;
+     
+      max-width: none;
+      max-height: 650px;
+*/
+
+ max-width: 100%;
+       float: none;
+      padding: 0;
+display: flex;
+      justify-content: center;
+
+   } 
+
+   .spec-content figure img {
+      max-width: auto;
+      max-height: 400px;
+      object-fit: cover;
+
+      
+
+   }
 
 
 
-
-
-
-
-
-
+   .modal figure img {
+      max-width: 800px;
+   }
+   .modal figure {
+      margin:0;
+   }
 }
