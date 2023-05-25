@@ -419,7 +419,7 @@ footer {
 }
 
 form {
-    background-color: #7160457e;
+    background-color: #c5d8c8;
     color: #000000;
     padding: 20px 25%;
     margin: 100px 0;
@@ -453,6 +453,6 @@ form textarea {
 
 .form-error {
     display: none;
-    color: #8c0000;
+    color: #b00;
 
 }
