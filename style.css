@@ -152,7 +152,7 @@ footer {
     display: flex;
 /*     justify-content: center;
  */    position: relative;
-    top: 50px;
+    top: 60px;
     left: -85px;
     max-width: 200px;
 }
@@ -411,14 +411,14 @@ footer {
 
 .contact img {
     float: left;
-    max-width: 30px;
+    max-width: 25px;
 }
 
 form {
-    background-color: #716045;
-    color: #fff;
+    background-color: #7160457e;
+    color: #000000;
     padding: 20px 25%;
-    margin: 75px 0;
+    margin: 100px 0;
     font-size: 0.9em;
 
 
@@ -452,4 +452,6 @@ form textarea {
 
 .form-error {
     display: none;
+    color: #8c0000;
+
 }
