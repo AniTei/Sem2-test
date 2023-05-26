@@ -13,7 +13,6 @@
 
 @media (max-width: 599px) {
     header {
-
         position: fixed;
         bottom: 0;
         left: 0;
@@ -66,15 +65,15 @@
     }
 
     nav {
-        position: relative;
-        top: 100px;
-        background-color: #2241df;
-        padding: 20px;
+        background-color: #716045;
+        bottom: 95px;
+        position: fixed;
+        width: 100%;
     }
 
     nav a {
         display: block;
-        background-color: #2241df;
+        background-color: #716045;
         color: #ffffff;
         text-align: center;
         margin: auto;
@@ -105,30 +104,4 @@
         margin: auto;
         padding: 3%;
     }
-}
-
-/* 
-
-@media (max-width: 599px) {
-    
-
-
-   /*  header {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        justify-content: center;
-    } */
-
-
-
-
-/*     #hamburger:checked~.logo {
-        width: 120px;
-        padding: 0px 0;
-        position: fixed;
-        bottom: 0px;
-    } */
-/* 
 }
