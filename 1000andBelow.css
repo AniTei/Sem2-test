@@ -2,6 +2,12 @@
    main {
       width: 90vw;
    }
+   .header-content {
+      width: 90%;
+   }
+   nav{
+      width: 50%;
+   }
 
 
    /* contact */
