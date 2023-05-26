@@ -249,6 +249,10 @@ footer {
 
 /***** BLOG LIST *****/
 
+
+
+
+
 .list-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -260,7 +264,6 @@ footer {
         'list-img list-button'
     ;
     margin-bottom: 5vh;
-
 }
 
 .list-grid h2 {
@@ -273,7 +276,6 @@ footer {
 
 .list-img-container {
     grid-area: list-img;
-
 }
 
 .list-img-container p {
@@ -286,14 +288,12 @@ footer {
     height: 300px;
     object-fit: cover;
     margin: 0;
-
 }
 
 .list-grid img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-
 }
 
 .list-grid .date {
@@ -316,8 +316,12 @@ footer {
 }
 
 .list-more-posts-container {
-    display: none;
+    display: none; 
 }
+
+
+
+
 
 /***** SPECIFIC POST*****/
 
@@ -343,7 +347,6 @@ footer {
 .spec-container .date {
     text-align: end;
 }
-
 
 .spec-content .wp-block-image {
     cursor: pointer;
@@ -394,14 +397,13 @@ footer {
     width: auto;
     max-height: 70vh;
     max-width: 800px;
-
-
 }
-
-
 .modal p {
     display: none;
 }
+
+
+
 
 /*** CONTACT ***/
 
