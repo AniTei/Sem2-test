@@ -2,15 +2,17 @@
    main {
       width: 90vw;
    }
+
    .header-content {
       width: 90%;
    }
-   nav{
+
+   nav {
       width: 50%;
    }
 
 
-   /* contact */
+   /*** contact ***/
 
    form {
       padding: 20px 10%;
@@ -22,7 +24,7 @@
    }
 
 
-   /* about */
+   /*** about ***/
 
    .about-grid {
       grid-gap: 0;
@@ -50,7 +52,7 @@
 
 
 
-   /* blog-list */
+   /*** blog-list ***/
 
    .list-grid .date,
    .list-grid .text {
@@ -60,7 +62,6 @@
    .list-grid {
       justify-content: center;
    }
-
 
    .list-grid {
       display: grid;
@@ -87,12 +88,10 @@
       position: relative;
       top: -40px;
       text-align: center;
-
    }
 
    .list-img-container {
       grid-area: list-img;
-
    }
 
    .list-grid figure {
@@ -100,28 +99,26 @@
       object-fit: cover;
       margin: 0;
       max-width: 600px;
-
    }
 
    .list-grid img {
       height: 250px;
       object-fit: cover;
-
    }
 
    .list-container,
-   .list-grid a ,
+   .list-grid a,
    .list-more-posts-container {
       display: grid;
       justify-content: center;
    }
 
    .list-more-posts-container {
-display: none;
+      display: none;
    }
 
 
-   /* spec-post */
+   /*** spec-post ***/
 
    .spec-content p {
       margin: 2em;
@@ -132,34 +129,18 @@ display: none;
    }
 
    .spec-content figure {
-      /* 
-
-      margin: 0;
-      position: relative;
-      left: -5%;
-     
-      max-width: none;
-      max-height: 650px;
-*/
-
       max-width: 100%;
       float: none;
       padding: 0;
       display: flex;
       justify-content: center;
-
    }
 
    .spec-content figure img {
       max-width: auto;
       max-height: 400px;
       object-fit: cover;
-
-
-
    }
-
-
 
    .modal figure img {
       max-width: 800px;
@@ -168,4 +149,13 @@ display: none;
    .modal figure {
       margin: 0;
    }
+
+
+
+
+   
+   /*** index ***/
+
+
+
 }
