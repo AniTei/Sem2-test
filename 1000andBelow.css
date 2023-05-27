@@ -153,9 +153,88 @@
 
 
 
-   
+
    /*** index ***/
 
+   .camille {
+      width: 110%;
+      position: relative;
+      left: -5%;
+      margin-bottom: 150px;
+   }
+
+   .camille-img {
+      width: 100%;
+   }
+
+   .camille p {
+      font-family: 'Cutive Mono', monospace;
+      font-weight: 900;
+      font-size: 2em;
+
+      max-width: 90%;
+
+      margin: auto;
+      position: relative;
+
+      bottom: 150px;
+
+      background-color: #ffffff92;
+   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+   .philosophy {
+      background-color: #c5d8c8;
+      width: 100%;
+      position: relative;
+      left: 0px;
+      padding: 0;
+      margin: 0;
+      display: block;
+   }
+
+   .philosophy-img {
+      width: 80%;
+      position: relative;
+      max-height: 500px;
+      object-fit: cover;
+   }
+
+
+
+
+
+
+}
+
+
+@media (max-width: 599px) {
+   .camille p {
+      font-family: 'Cutive Mono', monospace;
+      font-weight: 900;
+      font-size: 1.5em;
+
+      max-width: 80%;
+      border: solid #000 1px;
+
+
+      margin: auto;
+      position: relative;
+
+      left: -5%;
+      bottom: 50px;
+
+      background-color: #ffffffaa;
+   }
 }
