@@ -8,6 +8,9 @@
     header {
         top: 0px;
     }
+    .top-logo {
+        display: none;
+    }
 
 }
 

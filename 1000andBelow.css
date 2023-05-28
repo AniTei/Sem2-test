@@ -142,9 +142,9 @@
       object-fit: cover;
    }
 
-   .modal figure img {
+ /*   .modal figure img {
       max-width: 800px;
-   }
+   } */
 
    .modal figure {
       margin: 0;
